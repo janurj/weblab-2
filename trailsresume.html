@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Split Webpage</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-RlxxX89O3JYA6s7CeJ/QbpxrFfIIuA6v9PZQWnjUCUbKcs1+NJ4mk5I+KEVJm2A1" crossorigin="anonymous">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .split {
+    display: flex;
+    height: 100vh;
+    justify-content:center;
+    overflow:visible;
+  }
+
+  .left {
+    flex: 0 0 30%;
+    background-color: #333;
+    overflow-y: auto; 
+    color: white;
+    position:relative;
+  }
+  .left::-webkit-scrollbar{
+    width:5px;
+  }
+  .left::webkit-scrollbar-track{
+    background:#333;
+  }
+
+  .right {
+    flex: 1;
+    background-color: #f1f1f1;
+    overflow-y: auto; 
+    padding: 20px;
+    background-image:url("bg2.jpg");
+  }
+
+  .menu {
+    padding: 20px;
+  }
+
+  .menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+
+  .menu a:hover {
+    background-color: #555;
+  }
+
+  .content {
+    padding: 20px;
+    flex:5;
+    margin:150px;
+  }
+
+  /* Content sections */
+  #about { background-color:#FFFDCB; }
+  #education { background-color: #FFE6E6; }
+  #area_of_interest { background-color: #F5E8DD; }
+  #skills { background-color: #FEFBF6; }
+  #project { background-color: #FFF7F1; }
+  #courses { background-color: #E3E1D9; }
+  #papers { background-color: #fcfcfc; }
+  #intern { background-color: #fefefe; }
+  #sw { background-color: #FFEDD8; }
+img.i1{
+  border-radius:50%;
+  width:40px;
+  height:40px;
+}
+</style>
+</head>
+<body>
+
+<div class="split">
+  <div class="left">
+    <img src="Photograph.png" alt="Your photo" style="border-radius: 50%/50%; width:130px; height:130px;margin:auto;">
+    <h3>JANANI R</h3>
+    <p>1212/4, GANDHIGRAMAM SOUTH, PASUPATHIPALAYAM POST, KARUR.</p>
+    <p><img src="what.png" width="20px" height="20px">+918438103698</p>
+    <div class="menu">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#area_of_interest">Area of Interest</a>
+      <a href="#skills">Skills Learnt</a>
+      <a href="#project">Projects</a>
+    <a href="#courses">Certificate courses</a>
+    <a href="#papers">Paper presented</a>
+    <a href="#intern">Internship</a>
+    <a href="#sw">Strength and Weakness</a>
+    <div style="display:inline-block;">
+    <a href="https://www.linkedin.com/feed/?trk=hb_signin" ><img class="i1" src="linkedin.png"></a>
+    <a href= "https://github.com/ "><img class="i1" src="github.png"></a>
+    </div>
+    </div>
+    </div>
+  <div class="right">
+    <div id="about" class="content">
+      <h2><i><u>About</u></h2></i></h2>
+      <h3>Name:<span style="font-weight:normal">Janani R</span></h3>
+      <h3>Father's Name:<span style="font-weight:normal">Rajasekar E</span></h3>
+      <h3>Mother's Name:<span style="font-weight:normal">Anuradha V</span></h3>
+      <h3>DOB:<span style="font-weight:normal">04.07.2004 </span></h3>
+      <h3>E-mail:<span style="font-weight:normal">jananir.22it@kongu.edu</span></h3>
+      <h3>Ph No:<span style="font-weight:normal">+918438103698</span></h3>
+      <h3>Address:<span style="font-weight:normal">1212/4,Gandhigramam south,Pasuvai post,Karur.</span></h3>
+      <h3>Pin Code:<span style="font-weight:normal">639004</span></h3>
+      
+    </div>
+    <div id="education" class="content">
+      <h2><i>Education</h2></i></h2>
+      <table border="2px solid black" style="width:90%; border-collapse: collapse;">
+        <colgroup>
+            <col style="width: 20%;">
+            <col style="width: 40%;">
+            <col style="width: 30%;">
+            <col style="width: 30%;">
+        </colgroup>
+        <tr>
+            <th>Degree</th>
+            <th>Institution</th>
+            <th>Percentage/cgpa</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td style="padding-left: 10px;"><center>10th</center></td>
+            <td><center>Bharani Park Matric Hr.Sec.School</center></td>
+            <td><center>93.5%</center></td>
+            <td><center>2020</center></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 10px;"><center>12th</center></td>
+            <td><center>Bharani Park Matric Hr.Sec.School</center></td>
+            <td><center>95%</center></td>
+            <td><center>2022</center></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 10px;"><center>B TECH</center></td>
+            <td><center>Kongu Engineering College</center></td>
+            <td><center>8.43</center></td>
+            <td><center>2026</center></td>
+        </tr>
+    </table>
+    </div>
+    <div id="area_of_interest" class="content">
+      <h2><i><u>Area of Interest</u></i></h2>
+      <h3>Area of Interest: <span style="font-weight:normal;">Fullstack developer</span></h3>
+    </div>
+    <div id="skills" class="content">
+      <h2><i><u>Skills Learnt</u></i></h2>
+      <h3>Skills Learnt:<span style="font-weight:normal;">C,C++,Java(basics),Python,SQL,React js,Flutter.</span></h3>
+    </div>
+    <div id="project" class="content">
+      <h2><i><u>Projects</u></i></h2>
+      <h3>Projects:<span style="font-weight:normal;">Presented project on audio and video recommened system in ideathon,presented a quiz app using flutter in hackathon and presented a project on drainage management system in 12th std.</span></h3>
+    </div>
+    <div id="courses" class="content">
+      <h2><i><u>Certificate courses</u></i></h2>
+      <h3>Certificate courses:<span style="font-weight:normal">Completed certificate courses in python,java.</span></h3>
+    </div>
+    <div id="papers" class="content">
+      <h2><i><u>Paper presented</u></i></h2>
+      <h3>Paper presentations:<span style="font-weight:normal">presented paper in intra department competition on the topic of ARTIFICIAL NEURAL NETWORK, presented paper in inter department competition on the topic of IOT(Internet Of Things), presented paper in Ramakrishna College on the topic of CONVOLUTIONAL NEURAL NETWORK.</span></h3>
+    </div>
+    <div id="intern" class="content">
+      <h2><i><u>Internship</u></i></h2>
+      <h3>Internship:<span style="font-weight:normal">completed online internship in ANDROID DEVELOPMENT conducted by codsoft.</span></h3>
+    </div>
+    <div id="sw" class="content">
+      <h2><i><u>Strength and Weakness</u></i></h2>
+      <h3>Strength and Weakness:<span style="font-weight:normal">I am collaborative and I've always enjoyed working with teams and it is one of my strongest attributes as well. I am quite meticulous with details and sometimes that affects my time management.</span></h3>
+    </div>
+  </div>
+</div>
+</body>
+</html>
